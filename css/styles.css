@@ -1,0 +1,281 @@
+*, 
+*::before, 
+*::after { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+} 
+
+  :root { 
+    --primary-color: #127369; 
+    --secondary-color: #BFBFBF; 
+    --tertiary-color: #10403B; 
+} 
+
+html, 
+body { 
+
+    font-family: 'Playfair', serif; 
+    background: linear-gradient(90deg, rgba(148,148,149,1) 0%, rgba(49,212,210,1) 50%, rgba(0,0,0,1) 100%);
+    color: #fff; 
+    line-height: 1.6; 
+    scroll-behavior: smooth; 
+} 
+
+a { 
+
+    color: white; 
+    text-decoration: none; 
+} 
+
+ul { 
+
+    list-style: none; 
+} 
+
+img { 
+
+    max-width: 40%; 
+} 
+
+.navbar__menu-list { 
+
+    display: flex; 
+    align-items: center; 
+    gap: 1rem; 
+    font-weight: 600; 
+} 
+  
+.container { 
+
+    max-width: 1000px; 
+    margin: 0 auto; 
+} 
+  
+/* Button styles */ 
+
+.btn { 
+
+    padding: 0.5rem 2rem; 
+    background-color: var(--primary-color); 
+    border: #fff; 
+    font-weight: 600; 
+    border-radius: 50px; 
+    transition: background-color 0.3s ease; 
+} 
+  
+.btn:hover { 
+
+    background-color: var(--secondary-color); 
+    border-color: var(--primary-color); 
+} 
+ 
+/* Navbar styles */ 
+
+.navbar { 
+
+    padding: 1rem 1rem; 
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    left: 0; 
+    z-index: 1000; 
+    background-color: transparent; 
+    transition: background-color 0.3s ease-in-out; 
+} 
+ 
+.navbar.navbar--scroll { 
+
+    background-color: rgba(126, 126, 126, 0.8); 
+    backdrop-filter: blur(10px); 
+} 
+  
+.navbar.navbar--scroll { 
+
+    background-color: rgba(126, 126, 126, 0.8); 
+    backdrop-filter: blur(10px); 
+} 
+  
+.navbar__container { 
+
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; /* Ensure items are vertically centered */ 
+} 
+  
+.navbar__logo img { 
+
+    width: 250px; 
+    height: auto;  
+} 
+  
+            /* HEADER */ 
+
+  .header_image { 
+
+    margin-top: 8.5rem;
+    background-image: url(../images/shop-interior.jpg); 
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+  
+    /* Barbers Section START */ 
+   
+.barbers__container { 
+
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 0.5rem; 
+    align-items: left; 
+    padding: 3rem 2rem; 
+    text-align: center;
+} 
+
+  .barbers__header {
+   
+    padding-bottom: 3rem;
+    font-size: 36px;
+    color: #000000;
+  }
+
+.barbers__card { 
+
+    padding: 0 3rem; 
+} 
+  
+.barbers__image img {
+    
+    width: 96px; 
+    height: 96px; 
+    border-radius: 50%; 
+    margin-right: auto; 
+    margin-left: auto; 
+    margin-bottom: 0.5rem; 
+} 
+  
+.barbers__card-title { 
+
+    font-style: italic; 
+    margin-bottom: 0.5rem; 
+} 
+        
+        /* Gallery section START */ 
+
+.gallery__images { 
+
+    display: grid; 
+    grid-template-columns: repeat(3, 3fr); 
+    gap: 2rem; 
+} 
+
+ .gallery__header {
+    padding-bottom: 3rem;
+    font-size: 36px;
+    color: #000000;
+    text-align: center;
+ }
+
+        /* testimonials */ 
+  
+.testimonials { 
+
+    padding: 4rem 2rem; 
+    text-align: center; 
+} 
+
+.testimonials_header {
+    padding-bottom: 3rem;
+    font-size: 36px;
+    color: #000000;
+}
+
+.testimonials__container { 
+
+    display: grid; 
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 1rem; 
+    align-items: left; 
+    justify-content: center; 
+} 
+
+.testimonials__card { 
+
+    padding: 0 3rem; 
+} 
+  
+.testimonials__card-text { 
+
+    font-size: 12px; 
+    font-style: italic; 
+    margin-bottom: 0.3rem; 
+} 
+  
+.contact { 
+
+    height: 100px; 
+    color: #000000;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    text-align: center; 
+} 
+ 
+.footer { 
+
+    background-color: #127369; 
+    color: white;     
+    font-size: 16px; 
+    letter-spacing: 0.4px; 
+    grid-column: 1 / 7; 
+    display: grid; 
+    text-align: right; 
+} 
+  
+.about-us { 
+
+    padding-top: 50px; 
+    font-size: 20px; 
+    text-align: center; 
+    margin-bottom: 40px; 
+    color: #000000; 
+} 
+  
+.about-us p { 
+
+    padding: 0 10%; 
+    text-align: center; 
+} 
+  
+    /* Media Queries */ 
+  
+@media (max-width: 992px) { 
+       
+    /* Barbers */ 
+
+ .barbers__container { 
+
+        grid-template-columns: repeat(2, 1fr); 
+      } 
+
+ .barbers__card { 
+
+        padding: 0 1.5rem; 
+      } 
+
+ .barbers__card:nth-child(3) { 
+
+        display: none; 
+      }     
+
+ .barbers__container { 
+
+        grid-template-columns: 1fr; 
+      } 
+
+ .barbers__card:nth-child(2) { 
+
+        display: none; 
+      }  
+} /* closes tablet media query */ 
